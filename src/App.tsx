@@ -1,6 +1,15 @@
+import { createSignal } from "solid-js"
 import logo from './logo.svg';
 import './App.css';
 
+const Button = () => {
+  console.log("ButtonButtonButtonButton")
+  const [count, setCount] = createSignal(0);
+  const onClick = () => {
+    setCount(count() + 1);
+  }
+  return <button onClick={onClick}>{count()}</button>
+}
 function App() {
   return (
     <div class="App">
@@ -17,6 +26,7 @@ function App() {
         >
           Learn Solid
         </a>
+        <Button></Button>
       </header>
     </div>
   );
