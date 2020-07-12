@@ -2,6 +2,7 @@
   "name": "solid-test",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sad-bohr-3dc210.netlify.app",
   "devDependencies": {
     "@types/jest": "26.0.4",
     "@types/node": "14.0.22",
